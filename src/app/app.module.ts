@@ -6,12 +6,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProductComponent } from './product/product.component';
 import { ProductStatusComponent } from './product-status/product-status.component';
+import { ChildComponent } from './child/child.component';
+import { StructuralDirectivesComponent } from './structural-directives/structural-directives.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductComponent,
-    ProductStatusComponent
+    ProductStatusComponent,
+    ChildComponent,
+    StructuralDirectivesComponent
   ],
   imports: [
     BrowserModule,

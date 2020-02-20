@@ -1,2 +1,6 @@
+<app-structural-directives></app-structural-directives>
+<app-child #childRef></app-child>
+<h2>{{childRef.message}}</h2>
+<button (click)='childRef.sayChildHello()' class="btn btn-primary">CallChildFunction</button>
 <app-product></app-product>
 <router-outlet></router-outlet>
