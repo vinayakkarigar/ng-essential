@@ -1,0 +1,22 @@
+<div class="container">
+  <h1 *ngIf="title != null" class="text-center">{{title}}</h1>
+  <table class="table table-bordered">
+    <thead>
+      <th>ID</th>
+      <th>DESCRIPTION</th>
+      <th>PRICE</th>
+      <th>QUANTITY</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let p of products">
+        <td>{{p.id}}</td>
+        <td>{{p.description}}</td>
+        <td>{{p.price}}</td>
+        <td>{{p.quantity}}</td>
+        <td>
+          <app-product-status (qtyChange)='changeQty($event)' [productId]='p.id' [qty]='p.quantity'></app-product-status>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
