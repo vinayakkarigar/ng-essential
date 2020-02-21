@@ -11,6 +11,8 @@ import { StructuralDirectivesComponent } from './structural-directives/structura
 import { ChangeColorDirective } from './change-color.directive';
 import { ViewEncaspulationParentComponent } from './view-encaspulation-parent/view-encaspulation-parent.component';
 import { ViewEncapsulationChildComponent } from './view-encapsulation-child/view-encapsulation-child.component';
+import { PipeDemoComponent } from './pipe-demo/pipe-demo.component';
+import { FirstCharacterUpperCasePipe } from './first-character-upper-case.pipe';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { ViewEncapsulationChildComponent } from './view-encapsulation-child/view
     StructuralDirectivesComponent,
     ChangeColorDirective,
     ViewEncaspulationParentComponent,
-    ViewEncapsulationChildComponent
+    ViewEncapsulationChildComponent,
+    PipeDemoComponent,
+    FirstCharacterUpperCasePipe
   ],
   imports: [
     BrowserModule,

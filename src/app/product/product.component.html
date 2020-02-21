@@ -10,8 +10,8 @@
     <tbody>
       <tr *ngFor="let p of products">
         <td>{{p.id}}</td>
-        <td>{{p.description}}</td>
-        <td>{{p.price}}</td>
+        <td>{{p.description | uppercase}}</td>
+        <td>{{p.price | currency:'INR':'symbol-narrow':'4.2-2'}}</td>
         <td>{{p.quantity}}</td>
         <td>
           <app-product-status (qtyChange)='changeQty($event)' [productId]='p.id' [qty]='p.quantity'></app-product-status>
