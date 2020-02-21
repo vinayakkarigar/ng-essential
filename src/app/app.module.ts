@@ -9,6 +9,8 @@ import { ProductStatusComponent } from './product-status/product-status.componen
 import { ChildComponent } from './child/child.component';
 import { StructuralDirectivesComponent } from './structural-directives/structural-directives.component';
 import { ChangeColorDirective } from './change-color.directive';
+import { ViewEncaspulationParentComponent } from './view-encaspulation-parent/view-encaspulation-parent.component';
+import { ViewEncapsulationChildComponent } from './view-encapsulation-child/view-encapsulation-child.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { ChangeColorDirective } from './change-color.directive';
     ProductStatusComponent,
     ChildComponent,
     StructuralDirectivesComponent,
-    ChangeColorDirective
+    ChangeColorDirective,
+    ViewEncaspulationParentComponent,
+    ViewEncapsulationChildComponent
   ],
   imports: [
     BrowserModule,
