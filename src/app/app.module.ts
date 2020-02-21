@@ -8,6 +8,7 @@ import { ProductComponent } from './product/product.component';
 import { ProductStatusComponent } from './product-status/product-status.component';
 import { ChildComponent } from './child/child.component';
 import { StructuralDirectivesComponent } from './structural-directives/structural-directives.component';
+import { ChangeColorDirective } from './change-color.directive';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { StructuralDirectivesComponent } from './structural-directives/structura
     ProductComponent,
     ProductStatusComponent,
     ChildComponent,
-    StructuralDirectivesComponent
+    StructuralDirectivesComponent,
+    ChangeColorDirective
   ],
   imports: [
     BrowserModule,
